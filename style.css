@@ -1,0 +1,87 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: black;
+  color: #333;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.area {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.output {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+/* Header Style */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 28px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for Textareas */
+textarea {
+  min-height: 250px;
+  margin: 10px 30px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color: #333;
+  resize: none;
+  transition: all 0.3s ease-in-out;
+  width: 90%;
+}
+
+textarea:focus {
+  /* transform: scale(1.05); */
+  border: 5px solid #28a745;
+  box-shadow: 8px 0px 8px 8px rgba(85, 255, 0, 0.4);
+  outline: none;
+}
+
+textarea::placeholder {
+  color: #bbb;
+}
+
+/* Custom Borders for Each Textarea */
+textarea#html {
+  border-left: 5px solid #ff5733;
+}
+
+textarea#css {
+  border-left: 5px solid #007bff;
+}
+
+textarea#js {
+  border-left: 5px solid #ffc107;
+}
+
+/* Styling for iframe */
+iframe {
+  width: 90%;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
