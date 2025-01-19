@@ -26,11 +26,27 @@ body {
 }
 
 /* Header Style */
-h1 {
+.title-editor {
   text-align: center;
   margin-top: 20px;
   color: #fff;
   font-size: 28px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.description-editor {
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 18px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.description-editor2{
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 18px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -85,3 +101,374 @@ iframe {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Navbar */
+nav {
+  /* width: 100%; */
+  /* height: 80px; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5%;
+  background-color: #8c93c0;
+}
+
+nav .heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-top: 26px;
+}
+
+nav ul li {
+  padding: 8px 15px;
+  border-radius: 10px;
+  transition: 0.2s ease-in;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li:hover, .active {
+  background-color: purple;
+}
+
+nav ul li a:hover, .active a:hover {
+  color: white;
+}
+
+nav .sideMenuButton {
+  font-size: 30px;
+  font-weight: bolder;
+  cursor: pointer;
+  display: none;
+}
+
+/* responsive navbar css */
+@media screen and (max-width: 600px) {
+  nav .sideMenuButton {
+    display: flex;
+  }
+
+  nav .navbar {
+    display: none;
+  }
+
+  .sideNavigationBar {
+    display: block !important;
+  }
+}
+
+.sideNavigationBar {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0%;
+  background-color: purple;
+  overflow-x: hidden;
+  transition: 0.3s ease-in;
+  padding-top: 60px;
+  display: none;
+}
+
+.sideNavigationBar a {
+  padding: 8px 8px 8px 40px;
+  display: block;
+  font-size: 25px;
+  font-weight: 500;
+  color: #d1d1d1;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.sideNavigationBar a button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: purple;
+  font-size: 16px;
+  border-style: none;
+  font-weight: 700;
+}
+
+.sideNavigationBar a:hover {
+  color: white;
+}
+
+.sideNavigationBar .closeButton {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .sideNavigationBar {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sideNavigationBar a {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sideNavigationBar .closeButton {
+    font-size: 40px;
+  }
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode textarea {
+  background-color: #333;
+  color: white;
+} 
+
+    /* Styling for buttons */
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: purple;
+  font-size: 16px;
+  border-style: none;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: purple;
+  color: white;
+}
+
+/* Styling for download button */
+.download {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.download button {
+  margin: 0 10px;
+}
+
+.download button:hover {
+  background-color: purple;
+  color: white;
+}
+
+/* Styling for footer */
+footer {  
+  background-color: #8c93c0;
+  padding: 15px 0;  
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+.footer-text {
+  color: white;
+  font-size: 16px;
+}
+
+.footer-icon {
+  margin-right: 10px;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode .area {
+  background-color: #333;
+}
+
+.dark-mode textarea {
+  background-color: #333;
+  color: white;
+  border: 1px solid #ddd;
+}
+
+.dark-mode button {
+  background-color: purple;
+  color: white;
+}
+
+.dark-mode .download button {
+  background-color: purple;
+  color: white;
+}
+
+.dark-mode footer {
+  background-color: black;
+}
+
+.dark-mode footer-text {
+  color: white;
+}
+
+/* Responsive design for footer */
+
+@media screen and (max-width: 600px) {
+  footer {
+    position: relative;
+    padding: 10px 0;
+  }
+}
+
+/* Responsive design for download button */
+
+@media screen and (max-width: 600px) {
+  .download {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+}
+
+/* Responsive design for sidebar */
+
+@media screen and (max-width: 600px) {
+  .sideNavigationBar {
+    width: 100%;
+  }
+  
+  .sideMenuButton {
+    display: flex;
+  }
+  
+  .navbar {
+    display: none;
+  }
+}
+
+/* Responsive design for textarea */
+
+@media screen and (max-width: 600px) {
+  .area {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive design for buttons */
+
+@media screen and (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+/* Responsive design for footer */
+
+@media screen and (max-width: 600px) {
+  footer {
+    position: relative;
+    padding: 10px 0;
+  }
+}
+
+/* Responsive design for iframe */
+
+@media screen and (max-width: 600px) {
+  iframe {
+    width: 100%;  
+  }
+}
+
+/* Responsive design for navbar */
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+
+/* Responsive design for header */
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+}
+
+/* Responsive design for dark mode toggle */
+
+@media screen and (max-width: 600px) {
+  .dark-mode-toggle {
+    display: none;
+  }
+} 
+
+    /* Styling for dark mode toggle */
+.dark-mode-toggle {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  border-style: none;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.dark-mode-toggle:hover {
+  background-color: purple;
+  color: white;
+  transition: 0.3s;
+  border-color: purple;
+}
+
+/* Dark Mode */
+
+.dark-mode .dark-mode-toggle {
+  background-color: purple;
+  color: white;
+}
+
+.dark-mode .dark-mode-toggle:hover {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode .area {
+  background-color: #333;
+}
+
+.dark-mode textarea {
+  background-color: #333;
+  color: white;
+  border: 1px solid #ddd;
+}

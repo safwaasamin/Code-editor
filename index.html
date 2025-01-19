@@ -1,25 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Interactive Web-Dev Code Editor</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>TriScribe</title>
 </head>
 
 <body>
-  <h1>Interactive Web-Dev Code Editor</h1>
-  <div class="wrapper">
-  <div class="area">
-    <textarea id="html" placeholder="HTML"></textarea>
-    <textarea id="css" placeholder="CSS"></textarea>
-    <textarea id="js" placeholder="JavaScript"></textarea>
+  <nav>
+    <div class="heading">TriScribe</div>
+    <span class="sideMenuButton" onclick="openNavbar()">
+      &#9776
+    </span>
+
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="editor.html" target="_blank">Editor</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Side navigation bar for 
+        responsive website -->
+  <div class="sideNavigationBar" id="sideNavigationBar">
+    <a href="#" class="closeButton" onclick="closeNavbar()">
+      &#x274C
+    </a>
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="editor.html" target="_blank">Editor</a>
   </div>
-  <div class="output">
-    <iframe id="code"></iframe>
+
+  <!-- Content -->
+  <div class="line" id="Home">
+    <div class="side1">
+      <h1>TriScribe</h1>
+      <p>
+        TriScribe is a web development code editor for those who want to experiment with HTML, CSS, and JavaScript.
+      </p>
+      <br>
+      <button>
+        <a href="editor.html" target="_blank">
+          Open Editor
+        </a>
+      </button>
+    </div>
+    <div class="side2">
+      <img src="image1.jpg" width="500">
+    </div>
   </div>
-</div>
-  <script type="text/javascript" src="script.js"></script>
+
+  <br>
+
+  <section class="about" id="My Projects">
+    <div class="content">
+      <div class="title">
+        <span>Languages </span>
+      </div>
+      <div class="boxes">
+        <div class="box">
+          <div class="topic">
+            <a href="" target="_blank">
+              HTML
+            </a>
+          </div>
+          <p>
+            HTML stands for HyperText Markup Language. It is used to design web pages using the markup language.
+          </p>
+        </div>
+        <div class="box">
+
+          <div class="topic">
+            <a href="" target="_blank">
+              CSS
+            </a>
+          </div>
+          <p>
+            Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML.
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="topic">
+            <a href="" target="_blank">
+              Javascript
+            </a>
+          </div>
+          <p>
+            JavaScript (JS) is the most popular lightweight, interpreted compiled programming language.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Sign Up</span></div>
+      <div class="contactMenu">
+        <div class="input1">
+          <div class="label1">Your Name</div>
+          <div class="input2">
+            <input type="text" placeholder="Enter your Name here">
+          </div>
+          <div class="label1">
+            <label>Your Email</label>
+          </div>
+          <div class="input2">
+            <input type="text" placeholder="Enter your Email here">
+          </div>
+          <div class="label1">
+            <label>Your Password</label>
+          </div>
+          <div class="input2">
+            <input type="text" placeholder="Enter your Password here">
+          </div>
+          <div class="button">
+            <button>Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer section -->
+  <footer>
+    <div class="footer">
+      <span>
+        Created By S_Samin
+      </span>
+    </div>
+  </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>

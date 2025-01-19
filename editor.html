@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TriScribe: Web-Dev Code Editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <p class="heading">TriScribe</p>
+    <span class="sideMenuButton" onclick="openNavbar()">
+      &#9776
+    </span>
+
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="editor.html" target="_blank">Editor</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Side navigation bar for 
+        responsive website -->
+  <div class="sideNavigationBar" id="sideNavigationBar">
+    <a href="#" class="closeButton" onclick="closeNavbar()">
+      &#x274C
+    </a>
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="editor.html" target="_blank" class="active">Editor</a>
+  </div>
+  
+  <!-- Main content -->
+  <h1 class="title-editor">TriScribe: Web-Dev Code Editor</h1>
+  <p class="description-editor">Welcome to TriScribe, your one-stop solution for web development code editors. Create, edit, and preview your HTML, CSS, and JavaScript code in a seamless and user-friendly environment.</p>
+  <p class="description-editor2">Start by creating your HTML, CSS, and JavaScript files in the editor above, then click the 'Preview' button to see your changes in action.</p>
+
+  <!-- Code editor and preview area -->
+  <div class="wrapper">
+    <div class="area">
+      <textarea id="html" placeholder="HTML"></textarea>
+      <textarea id="css" placeholder="CSS"></textarea>
+      <textarea id="js" placeholder="JavaScript"></textarea>
+    </div>
+    <div class="output">
+      <iframe id="code"></iframe>
+    </div>
+  </div>
+
+  <!-- download files button and download them in txt file format using javasciprt concept -->
+
+  <div class="download">
+    <button onclick="downloadFile('html', 'html')">Download HTML</button>
+    <button onclick="downloadFile('css', 'css')">Download CSS</button>
+    <button onclick="downloadFile('js', 'js')">Download JavaScript</button>
+  </div>
+  
+  <!-- Footer section -->
+  <footer>
+    <p class="copyright">Copyright &copy; 2023 TriScribe. All rights reserved.</p>
+  </footer>
+  <script type="text/javascript" src="script.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
