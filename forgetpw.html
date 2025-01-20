@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset</title>
+    <link rel="stylesheet" href="forgetpw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav>
+        <div class="heading">TriScribe</div>
+        <span class="sideMenuButton" onclick="openNavbar()">
+            &#9776
+        </span>
+
+        <div class="navbar" style="margin-top: -12px;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="editor.html" target="_blank">Editor</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side navigation bar for 
+            responsive website -->
+    <div class="sideNavigationBar" id="sideNavigationBar">
+        <a href="#" class="closeButton" onclick="closeNavbar()">
+            &#x274C
+        </a>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="editor.html" target="_blank">Editor</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <h2>Password Reset</h2>
+        <form id="resetForm">
+            <label for="email">Enter your E-mail:</label>
+            <input type="email" id="email" required>
+            <button type="submit">Reset Password</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="icon" href="./assets/RRlogo.jpeg" type="image/icon type">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <nav>
+        <div class="heading">TriScribe</div>
+        <span class="sideMenuButton" onclick="openNavbar()">
+            &#9776
+        </span>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="editor.html" target="_blank">Editor</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side navigation bar for 
+            responsive website -->
+    <div class="sideNavigationBar" id="sideNavigationBar">
+        <a href="#" class="closeButton" onclick="closeNavbar()">
+            &#x274C
+        </a>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="editor.html" target="_blank">Editor</a>
+    </div>
+
+    <div class="center">
+        <h1>Login</h1>
+        <form>
+            <div class="txt_field">
+                <input type="text" id="username" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="pass"><a href="forgetpw.html">Forgot Password?</a></div>
+            <input type="submit" value="Login">
+            <div class="signup_link">
+                Don't have an account? <a href="index.html#contact">Register</a>
+            </div>
+        </form>
+</body>
+
+</html>

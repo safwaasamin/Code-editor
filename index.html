@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="register.css">
   <title>TriScribe</title>
 </head>
 
@@ -57,7 +58,7 @@
 
   <br>
 
-  <section class="about" id="My Projects">
+  <section class="about" id="about">
     <div class="content">
       <div class="title">
         <span>Languages </span>
@@ -81,7 +82,8 @@
             </a>
           </div>
           <p>
-            Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML.
+            Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document
+            written in HTML or XML.
           </p>
         </div>
 
@@ -99,34 +101,45 @@
     </div>
   </section>
 
+  <!-- Contact -->
+
   <section class="contact" id="contact">
-    <div class="content">
-      <div class="title"><span>Sign Up</span></div>
-      <div class="contactMenu">
-        <div class="input1">
-          <div class="label1">Your Name</div>
-          <div class="input2">
-            <input type="text" placeholder="Enter your Name here">
-          </div>
-          <div class="label1">
-            <label>Your Email</label>
-          </div>
-          <div class="input2">
-            <input type="text" placeholder="Enter your Email here">
-          </div>
-          <div class="label1">
-            <label>Your Password</label>
-          </div>
-          <div class="input2">
-            <input type="text" placeholder="Enter your Password here">
-          </div>
-          <div class="button">
-            <button>Sign Up</button>
-          </div>
+    <div class="center">
+      <h1>Register</h1>
+      <form action="register.sql" method="post">
+        <div class="txt_field">
+          <input type="text" id="UserName" aria-label="UserName" required name="UserName">
+          <span></span>
+          <label>User Name</label>
         </div>
-      </div>
+        <div class="txt_field">
+          <input type="email" id="email" aria-label="email" required name="email">
+          <label>E-mail</label>
+          <span></span>
+        </div>
+        <div class="txt_field">
+          <input type="tel" id="MobileNumber" aria-label="MobileNumber" required name="MobileNumber">
+          <label>Mobile Number</label>
+          <span></span>
+        </div>
+        <div class="txt_field">
+          <input type="password" id="password" aria-label="Password" required name="password">
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" id="confirmpassword" aria-label="ConfirmPassword" required name="confirmpassword">
+          <span></span>
+          <label>Confirm Password</label>
+        </div>
+        <input type="submit" aria-label="signup_link" value="SIGN UP">
+        <div class="signup_link">
+          Already have an account? <a href="login.html">Sign In</a>
+        </div>
+      </form>
     </div>
   </section>
+
   <!-- Footer section -->
   <footer>
     <div class="footer">
